@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strona Anety</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <style>
     body {
         background-color: #F8C8DC; /* pastelowe różowe tło */
@@ -13,7 +14,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
     }
     
     .container {
@@ -29,12 +29,39 @@
         padding: 20px;
         margin-bottom: 20px;
     }
+
+    img {
+        width: 50%;
+        border: 2px solid #000000; /* czarny border */
+        border-radius: 10px; /* zaokrąglenie rogów */
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.5s; /* Dodanie płynnego przejścia transformacji */
+    }
+
+    img:hover {
+        transform: rotate(3deg); /* Delikatne obrócenie obrazka przy najechaniu */
+    }
+
+    h1 {
+        animation: pulse 1.5s infinite alternate; /* Dodanie animacji pulsacji do nagłówka */
+    }
+
+    @keyframes pulse {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.05);
+        }
+    }
 </style>
 </head>
 <body>
 
 <div class="container">
     <h1>Witaj na stronie Anety!</h1>
+	
     
     <div class="box">
         <h2>O mnie</h2>
@@ -44,11 +71,22 @@
     <div class="box">
         <h2>Moje prace</h2>
         <p>Tutaj będę prezentować moje najnowsze projekty. Mam nadzieję, że przypadną Ci do gustu!</p>
+	    <p>Sowa:</p>
+            <img src="images/1.jpg">
+	    <p>Torebki:</p>
+            <img src="images/2.jpg">
+            <img src="images/5.jpg">
+		<p>Pingwin:</p>
+            <img src="images/6.jpg">
+		<p>Panda:</p>
+            <img src="images/9.jpg">
+		<p>Wisząca doniczka:</p>
+            <img src="images/7.jpg">
     </div>
     
     <div class="box">
         <h2>Kontakt</h2>
-        <p>Jeśli chcesz się ze mną skontaktować, napisz do mnie na adres: aneta@example.com</p>
+        <p>Jeśli chcesz się ze mną skontaktować, napisz do mnie na adres: aneta.duleba@hotmail.com</p>
     </div>
 </div>
 
